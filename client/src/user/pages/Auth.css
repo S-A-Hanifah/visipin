@@ -1,0 +1,24 @@
+.authentication__header {
+  color: white;
+  text-align: center;
+}
+
+.authentication {
+  width: 90%;
+  max-width: 25rem;
+  margin: 7rem auto;
+  text-align: center;
+}
+
+.authentication form {
+  margin-bottom: 1rem;
+}
+.pathway {
+  color: #ff0055;
+  text-decoration: underline #ff0055;
+  cursor: pointer;
+}
+.pathway:hover {
+  color: #0c9cd1;
+  text-decoration: underline #ff0055;
+}
