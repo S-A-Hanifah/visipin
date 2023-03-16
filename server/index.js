@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from 'url';
 import express from "express";
 import bodyParser from "body-parser";
 import placesRoutes from "./routes/places.js";
@@ -8,6 +9,10 @@ import mongoose from "mongoose";
 import { createError } from "./utils/Error.js";
 
 const app = express();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 
 app.use(express.json());
 app.use(bodyParser.json());
