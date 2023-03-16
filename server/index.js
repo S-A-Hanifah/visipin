@@ -51,7 +51,7 @@ mongoose
     `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PWORD}@clustervisi.nsagkj8.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
   )
   .then(() => {
-    app.listen(5000, () => {
+    app.listen(process.env.PORT, () => {
       console.log("CONNECTED TO DB");
     });
   })
