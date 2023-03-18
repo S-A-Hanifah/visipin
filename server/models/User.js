@@ -7,7 +7,7 @@ const UserSchema = new mongoose.Schema({
   image: {
     type: String,
     default: undefined,
-    // required:true
+    required:true
   },
   places: [
     {
